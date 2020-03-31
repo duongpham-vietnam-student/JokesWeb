@@ -7,7 +7,7 @@
 # 3. Preliminary Functional Areas
   - User Function : 
     - Register: sign in, sign out, sign up account.
-    - Write / Read: you write new jokes -> the administrator will approve its content -> save it in database. 
+    - Write: you write new jokes -> the administrator will approve its content -> save it in database. 
     - Evaluate: you can rate a jokes from 1 to 3 stars.
     - Admin User: delete jokes or members, approve content of stories.
   - Jokes Function : Search story on your demand. And you can read your favorite jokes.
