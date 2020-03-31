@@ -11,3 +11,4 @@
     - Evaluate: you can rate a jokes from 1 to 3 stars.
     - Admin User: delete jokes or members, approve content of stories.
   - Jokes Function : Search story on your demand.
+  - Communication: I will create a chatbox where everyone can talk.
