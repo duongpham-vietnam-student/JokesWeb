@@ -1,0 +1,48 @@
+<label for="inputName">Name: </label>
+<input type="text"
+       id="inputName"
+       [(ngModel)]="inputName"
+>
+
+<p>Which country do you like?</p>
+
+<input type="checkbox"
+       id="likesUSA"
+       [(ngModel)]="likesUSA"> USA
+<br />
+
+<input type="checkbox"
+       id="likesChina"
+       [(ngModel)]="likesChina"> China
+
+<br />
+
+<button (click)="clickHandler()">Submit</button>
+<div *ngIf="apiError">
+  <h1>Error!</h1>
+  {{apiError}}
+</div>
+
+
+<div *ngIf="apiResponse">
+  Thanks for your submission!
+  <br />
+  Your name is {{apiResponse.name}}
+
+  <div *ngIf="apiResponse.likes_China; else no_China">
+    You Like China
+  </div>
+  <ng-template #no_China>
+    <div>
+      You Don't Like China
+    </div>
+  </ng-template>
+  <div *ngIf="apiResponse.likes_USA; else no_USA">
+    You Like USA
+  </div>
+  <ng-template #no_USA>
+    <div>
+      You Don't Like USA
+    </div>
+  </ng-template>
+</div>
